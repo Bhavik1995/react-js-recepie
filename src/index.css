@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app_center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
 }
+
+.app_form{
+  margin-top: 18px;
+}
+
+.add_input{
+  padding: 6px 16px;
+  min-width: 200px;
+  max-width: 100vw;
+  font-size: 15px;
+}
+
+.add_submit{
+  padding: 6px 16px;
+  font-size: 15px;
+  margin-left: 6px;
+  background-color: #02aff0;
+  border-radius: 4px;
+  border: 2px solid #02aff0;
+  color: white;
+  cursor: pointer;
+}
+
+.add_submit:hover{
+  padding: 6px 16px;
+  font-size: 15px;
+  margin-left: 6px;
+  background-color: white;
+  border-radius: 4px;
+  border: 2px solid #02aff0;
+  color: #02aff0;
+  cursor: pointer;
+}
+
+.recepieTile{
+  display: grid;
+  
+}
+
+.recepie_tile_image{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.recepie_tile_name{
+  max-width: 200px;
+  text-align: center;
+  margin: 12px 0px;
+}
+
+.app_recepies{
+  display: grid;
+  margin-top: 24px;
+  grid-template-columns: 230px 230px;
+  align-items: baseline;
+}
+
+
+
+
